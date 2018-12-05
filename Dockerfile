@@ -1,4 +1,8 @@
 FROM ubuntu
 MAINTAINER sesnitin.1994@gmail.com
-RUN cat test.txt > tested.txt
+
+ADD * /root
+
+WORKDIR /root
+
 CMD ["echo","success"]
